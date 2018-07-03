@@ -17,7 +17,7 @@ public class IndexController {
     @RequestMapping("/lyf")
     public String lyf(ModelMap modelMap){
         modelMap.addAttribute("title","Hello World");
-        modelMap.addAttribute("message","Made By Ivan");
+        modelMap.addAttribute("message","Made By Ivan Some Change...");
         return "index";
     }
 
