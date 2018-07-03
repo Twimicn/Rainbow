@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>名字</td>
+            <td>学号</td>
+        </tr>
+        <tr th:each="student,iterStat : ${students}">
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.id}"></td>
+        </tr>
+    </table>
+</body>
+</html>
