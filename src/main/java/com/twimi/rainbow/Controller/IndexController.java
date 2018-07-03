@@ -13,4 +13,11 @@ public class IndexController {
         modelMap.addAttribute("message","内心永远是彩虹色");
         return "index";
     }
+
+    @RequestMapping("/htx")
+    public String htx(ModelMap modelMap){
+        modelMap.addAttribute("title","Hello World");
+        modelMap.addAttribute("message","这是小可爱写的代码");
+        return "index";
+    }
 }
