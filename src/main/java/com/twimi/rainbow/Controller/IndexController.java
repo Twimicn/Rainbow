@@ -67,4 +67,11 @@ public class IndexController {
         modelMap.addAttribute("students",students);
         return "table";
     }
+
+    @RequestMapping("/hxf")
+    public String hxf(ModelMap modelMap){
+        modelMap.addAttribute("title", "Hello World");
+        modelMap.addAttribute("message", "这是韩晓菲写的代码");
+        return "index";
+    }
 }
