@@ -20,4 +20,11 @@ public class IndexController {
         modelMap.addAttribute("message","这是小可爱写的代码");
         return "index";
     }
+
+    @RequestMapping("/lyf")
+    public String lyf(ModelMap modelMap){
+        modelMap.addAttribute("title","Hello World");
+        modelMap.addAttribute("message","Made By Ivan");
+        return "index";
+    }
 }
