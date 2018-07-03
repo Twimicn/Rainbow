@@ -13,4 +13,11 @@ public class IndexController {
         modelMap.addAttribute("message","内心永远是彩虹色");
         return "index";
     }
+
+    @RequestMapping("/lyf")
+    public String lyf(ModelMap modelMap){
+        modelMap.addAttribute("title","Hello World");
+        modelMap.addAttribute("message","Made By Ivan");
+        return "index";
+    }
 }
