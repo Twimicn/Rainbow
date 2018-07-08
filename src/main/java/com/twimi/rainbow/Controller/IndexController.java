@@ -74,4 +74,11 @@ public class IndexController {
         modelMap.addAttribute("message", "这是韩晓菲写的代码");
         return "index";
     }
+
+    @RequestMapping("/jty")
+    public String jty(ModelMap modelMap){
+        modelMap.addAttribute("title", "Hello World");
+        modelMap.addAttribute("message", "这是姜天艺写的代码");
+        return "index";
+    }
 }
