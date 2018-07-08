@@ -81,4 +81,11 @@ public class IndexController {
         modelMap.addAttribute("message", "这是姜天艺写的代码");
         return "index";
     }
+
+    @RequestMapping("/wxq")
+    public String wxq(ModelMap modelMap){
+        modelMap.addAttribute("title", "AAAAAAAApril");
+        modelMap.addAttribute("message", "BBBBBBBartra");
+        return "index";
+    }
 }
