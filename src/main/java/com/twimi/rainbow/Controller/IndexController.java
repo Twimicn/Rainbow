@@ -21,6 +21,13 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping("/test")
+    public String index(ModelMap modelMap) {
+        modelMap.addAttribute("title", "你需要让view渲染的标题");
+        modelMap.addAttribute("message", "你需要让view渲染的内容");
+        return "index";
+    }
+
     @RequestMapping("/lyf")
     public String lyf(ModelMap modelMap) {
         modelMap.addAttribute("title", "Hello World");
