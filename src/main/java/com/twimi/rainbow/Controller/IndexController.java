@@ -22,7 +22,7 @@ public class IndexController {
     }
 
     @RequestMapping("/test")
-    public String index(ModelMap modelMap) {
+    public String test(ModelMap modelMap) {
         modelMap.addAttribute("title", "你需要让view渲染的标题");
         modelMap.addAttribute("message", "你需要让view渲染的内容");
         return "index";
@@ -68,29 +68,29 @@ public class IndexController {
     }
 
     @RequestMapping("/table")
-    public String table(ModelMap modelMap){
+    public String table(ModelMap modelMap) {
         StudentDao dao = new StudentDao();
         List<Student> students = dao.getStudents();
-        modelMap.addAttribute("students",students);
+        modelMap.addAttribute("students", students);
         return "table";
     }
 
     @RequestMapping("/hxf")
-    public String hxf(ModelMap modelMap){
+    public String hxf(ModelMap modelMap) {
         modelMap.addAttribute("title", "Hello World");
         modelMap.addAttribute("message", "这是韩晓菲写的代码");
         return "index";
     }
 
     @RequestMapping("/jty")
-    public String jty(ModelMap modelMap){
+    public String jty(ModelMap modelMap) {
         modelMap.addAttribute("title", "Hello World");
         modelMap.addAttribute("message", "这是姜天艺写的代码");
         return "index";
     }
 
     @RequestMapping("/wxq")
-    public String wxq(ModelMap modelMap){
+    public String wxq(ModelMap modelMap) {
         modelMap.addAttribute("title", "AAAAAAAApril");
         modelMap.addAttribute("message", "BBBBBBBartra");
         return "index";
